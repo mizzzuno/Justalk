@@ -1,0 +1,124 @@
+/* 外枠を追加 */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: Arial, sans-serif;
+}
+
+/* ナビゲーションを固定して中央揃え */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f4f4f4;
+  z-index: 1000;
+  padding: 10px 0; /* 上下に余白を追加 */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* 水平中央揃え */
+  gap: 20px; /* 各リンクの間隔 */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 全体の枠線と中央揃え */
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 80vh;
+  width: 100%;
+  max-width: 1200px; /* 最大幅を指定（オプション） */
+  margin: 0 auto; /* 中央揃え */
+  border: 2px solid #333; /* 外枠の設定 */
+  border-radius: 10px; /* 角を丸める（オプション） */
+  box-sizing: border-box; /* 枠線を含めてパディング計算 */
+}
+
+/* 外枠に影を追加（オプション） */
+div {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Styles */
+.main-content {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+}
+
+.record-button {
+  width: 90px;
+  height: 90px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+
+.record-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #e53e3e;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.recording .record-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 15%;
+  background-color: #c53030;
+}
+
+#speechChart {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.member-chip {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.member-avatar {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+}
